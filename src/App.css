@@ -1,5 +1,37 @@
 .App {
   text-align: center;
+  /* App.css */
+
+@keyframes bounceInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#animated-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounceInUp 2s ease-in-out;
+  opacity: 1;
+}
+
 }
 
 .App-logo {
@@ -36,3 +68,4 @@
     transform: rotate(360deg);
   }
 }
+
